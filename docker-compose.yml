@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  beackend_base:
+    build:
+      context: ./
+      dockerfile: ./Docker/Dockerfile
+    restart: "no"
+    volumes:
+      - ./src:/src
+    ports:
+      - "8100:5000"
+    tty: True
+    # command: ["python","app.py"]

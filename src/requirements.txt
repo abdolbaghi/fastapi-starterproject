@@ -1,0 +1,5 @@
+# PersianStemmer==1.0.0
+requests==2.31.0
+fastapi==0.104.1
+fastapi_utils==0.2.1
+uvicorn[standard]==0.24.0.post1
