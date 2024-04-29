@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI,  BackgroundTasks
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from typing import Mapping
-
+from .exceptions import InvalidCredentials
 
 
 async def parse_jwt_data(
